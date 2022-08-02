@@ -1,0 +1,19 @@
+# ninja log v5
+1	421	6810926975524881	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/main.cpp.obj	d351a68423c34a7c
+364	478	6811327248691757	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+3	363	6811327247575790	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+1	180	6811329783811802	build.ninja	bfd6a14f87ce387e
+3	347	6811330281946535	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+347	459	6811330283027661	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+4	340	6811330863374219	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+341	453	6811330864446489	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+2	370	6811331797962992	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+371	504	6811331799271206	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+3	347	6811332664669820	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+348	450	6811332665651285	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+3	341	6811332871982462	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+341	453	6811332873074774	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+2	334	6811333280208209	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+334	441	6811333281229525	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
+3	350	6811333879939455	CMakeFiles/Cole_Horvat_COMP_3141_Project.dir/driver.cpp.obj	15fa8f68f2ea1c7f
+350	461	6811333881016255	Cole_Horvat_COMP_3141_Project.exe	c32a565f76cab2b4
