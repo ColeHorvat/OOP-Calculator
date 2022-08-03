@@ -8,9 +8,6 @@
 bool inputNum(double &x, double &y);
 bool inputNum(double &x);
 
-bool checkIsDigit(double &x, double &y);
-bool checkIsDigit(double &x);
-
 int main() {
     string input;
     double x, y;
