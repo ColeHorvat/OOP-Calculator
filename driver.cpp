@@ -3,10 +3,10 @@
 #include "BasicCalculator.h"
 #include "ScientificCalculator.h"
 #include <string>
-#include <ctype.h>
+#include <cmath>
 
-bool inputNum(double &x, double &y);
-bool inputNum(double &x);
+void inputNum(double &x, double &y);
+void inputNum(double &x);
 
 int main() {
     string input;
@@ -71,7 +71,7 @@ int main() {
     cout << "Program terminated...";
 }
 
-bool inputNum(double &x, double &y) {
+void inputNum(double &x, double &y) {
     try {
         cout << "Input x: ";
         cin >> x;
@@ -79,31 +79,29 @@ bool inputNum(double &x, double &y) {
         cout << "Input y: ";
         cin >> y;
 
-        if(!isdigit(x) || !isdigit(y)) throw 505;
-        else return true;
+        if(!cin) {
+            throw 505;
+        }
 
     } catch (...) {
         cout << "\nOne or both of your inputs was not numbers. Please try again";
         cin.clear();
         cin.ignore();
-        return false;
     }
 
 }
 
-bool inputNum(double &x) {
+void inputNum(double &x) {
     try {
         cout << "\nInput x: ";
         cin >> x;
 
-        if(!isdigit(x)) throw 505;
-        else return true;
+        if(!cin) throw 505;
 
     } catch(...) {
         cout << "\nYour input was not a number. Please try again";
         cin.clear();
         cin.ignore();
-        return false;
     }
 
 }
