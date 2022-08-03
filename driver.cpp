@@ -3,11 +3,13 @@
 #include "BasicCalculator.h"
 #include "ScientificCalculator.h"
 #include <string>
+#include <ctype.h>
 
-void inputNum(double &x, double &y);
-void inputNum(double &x);
+bool inputNum(double &x, double &y);
+bool inputNum(double &x);
 
-
+bool checkIsDigit(double &x, double &y);
+bool checkIsDigit(double &x);
 
 int main() {
     string input;
@@ -15,7 +17,6 @@ int main() {
     ScientificCalculator calculator;
 
     while(input != "EXIT") {
-
         cout << "\nEnter the number for the option you'd like";
         calculator.displayOptions();
         cout << "\n\nEnter option: ";
@@ -73,17 +74,43 @@ int main() {
     cout << "Program terminated...";
 }
 
-void inputNum(double &x, double &y) {
-    cout << "Input x: ";
-    cin >> x;
+bool inputNum(double &x, double &y) {
+    try {
+        cout << "Input x: ";
+        cin >> x;
 
-    cout << "Input y: ";
-    cin >> y;
+        cout << "Input y: ";
+        cin >> y;
+
+        if(!isdigit(x) || !isdigit(y)) throw 505;
+        else return true;
+
+
+    } catch (...) {
+        cout << "\nOne or both of your inputs was not numbers. Please try again";
+        cin.clear();
+        cin.ignore();
+        return false;
+    }
+
 }
 
-void inputNum(double &x) {
-    cout << "\nInput x: ";
-    cin >> x;
+bool inputNum(double &x) {
+    try {
+        cout << "\nInput x: ";
+        cin >> x;
+
+        if(!isdigit(x)) throw 505;
+        else return true;
+
+
+    } catch(...) {
+        cout << "\nYour input was not a number. Please try again";
+        cin.clear();
+        cin.ignore();
+        return false;
+    }
+
 }
 
 
