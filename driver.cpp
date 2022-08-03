@@ -82,7 +82,6 @@ bool inputNum(double &x, double &y) {
         if(!isdigit(x) || !isdigit(y)) throw 505;
         else return true;
 
-
     } catch (...) {
         cout << "\nOne or both of your inputs was not numbers. Please try again";
         cin.clear();
@@ -99,7 +98,6 @@ bool inputNum(double &x) {
 
         if(!isdigit(x)) throw 505;
         else return true;
-
 
     } catch(...) {
         cout << "\nYour input was not a number. Please try again";
